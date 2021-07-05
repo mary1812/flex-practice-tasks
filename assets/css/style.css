@@ -1,5 +1,9 @@
 @import "./reset.css";
 
+:root {
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -47,24 +51,28 @@ body {
 
 .container {
   max-width: 600px;
+  margin: 0 auto;
 }
 
 .title {
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 2rem;
   /* padding: 10px; */
 }
 
-
 .header-text {
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .title,
-.header-text {
+.header-text,
+.section-title {
   margin-bottom: 10px;
 }
 
+.title,
+.section-title {
+  font-weight: bold;
+}
 
 .link {
   display: inline-block;
@@ -84,3 +92,21 @@ body {
 .link:hover {
   background-color: green;
 }
+
+.section {
+  padding: 20px;
+  background-color: #bbb;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.6rem;
+}
+
+.text-columns {
+  columns: 2 7rem;
+  column-gap: 1.5rem;
+}
+
+
+

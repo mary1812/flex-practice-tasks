@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -65,12 +65,14 @@ body {
 
 .title,
 .header-text,
-.section-title {
+.section-title,
+.card-title {
   margin-bottom: 10px;
 }
 
 .title,
-.section-title {
+.section-title,
+.card-title {
   font-weight: bold;
 }
 
@@ -108,5 +110,41 @@ body {
   column-gap: 1.5rem;
 }
 
+.work-section {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.hidden-title {
+  position: absolute;
+  left: -5000%;
+  opacity: 0;
+}
 
+.card {
+  max-width: 300px;
+  background-color: white;
+  margin: 20px;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+  display: block;
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}

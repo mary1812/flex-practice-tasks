@@ -1,1 +1,86 @@
-@import './reset.css';
+@import "./reset.css";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #333;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 450px;
+  color: white;
+  position: relative;
+  padding: 20px;
+}
+
+.header::before {
+  content: "";
+  background-image: url("./../img/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* inset: 0;   */
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  /* padding: 10px; */
+}
+
+
+.header-text {
+  font-size: 18px;
+}
+
+.title,
+.header-text {
+  margin-bottom: 10px;
+}
+
+
+.link {
+  display: inline-block;
+  padding: 15px 20px;
+  background: yellowgreen;
+  border-radius: 10px;
+  text-transform: capitalize;
+  max-width: 150px;
+}
+
+.overflow-protection {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.link:hover {
+  background-color: green;
+}

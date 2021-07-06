@@ -148,3 +148,16 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.small-section {
+  width: 50%;
+  color: white;
+}
+
+.theme-blue {
+  background: dodgerblue;
+}
+
+.theme-gray {
+  background: #444;
+}

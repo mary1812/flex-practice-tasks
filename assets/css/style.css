@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./site.css";
 
 :root {
   font-size: 16px;
@@ -173,3 +174,4 @@ body {
 .footer-link {
   color: dodgerblue;
 }
+

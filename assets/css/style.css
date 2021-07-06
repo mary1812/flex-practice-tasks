@@ -161,3 +161,15 @@ body {
 .theme-gray {
   background: #444;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+
+.footer-link {
+  color: dodgerblue;
+}
